@@ -1,22 +1,12 @@
-<<<<<<< Updated upstream
-import Vue from 'vue'
-import Vuex from 'vuex'
-=======
 import Vue from "vue";
 import Vuex from "vuex";
 import "firebase/auth";
->>>>>>> Stashed changes
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {
-  },
+  state: {},
   mutations: {
-<<<<<<< Updated upstream
-  },
-  actions: {
-=======
     newBlogPost() {},
     updateBlogTitle() {},
     fileNameChange() {},
@@ -41,8 +31,6 @@ export default new Vuex.Store({
     async getPost() {},
     async deletePost() {},
     async updateUserSettings() {},
->>>>>>> Stashed changes
   },
-  modules: {
-  }
-})
+  modules: {},
+});

@@ -11,14 +11,6 @@ export default {
   name: "app",
   components: {},
   data() {
-<<<<<<< Updated upstream
-    return {};
-  },
-  created() {},
-  mounted() {},
-  methods: {},
-  watch: {},
-=======
     return {
       navigation: null,
     };
@@ -31,7 +23,6 @@ export default {
   watch: {
     $route() {},
   },
->>>>>>> Stashed changes
 };
 </script>
 
