@@ -80,10 +80,7 @@ export default {
       windownWidth: null,
     };
   },
-  created() {
-    window.addEventListener("resize", this.checkScreen);
-    this.checkScreen();
-  },
+  created() {},
   methods: {
     checkScreen() {},
 
