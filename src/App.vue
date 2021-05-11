@@ -11,12 +11,27 @@ export default {
   name: "app",
   components: {},
   data() {
+<<<<<<< Updated upstream
     return {};
   },
   created() {},
   mounted() {},
   methods: {},
   watch: {},
+=======
+    return {
+      navigation: null,
+    };
+  },
+  created() {},
+  mounted() {},
+  methods: {
+    checkRoute() {},
+  },
+  watch: {
+    $route() {},
+  },
+>>>>>>> Stashed changes
 };
 </script>
 
