@@ -1,4 +1,5 @@
 # fireblogs
+Learning Vue
 
 ## Project setup
 ```
