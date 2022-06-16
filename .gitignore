@@ -2,6 +2,9 @@
 node_modules
 /dist
 
+# API 
+src/firebase/firebaseInit.js
+
 
 # local env files
 .env.local
