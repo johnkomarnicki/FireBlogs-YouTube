@@ -24,3 +24,8 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+src/firebase/firebaseInit.js
+src/firebase/firebaseInit.js
+.gitignore
+package-lock.json
+package.json
