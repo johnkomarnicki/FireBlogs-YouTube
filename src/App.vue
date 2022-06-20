@@ -11,6 +11,9 @@
 <script>
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
+import firebase from "firebase/app";
+import "firebase/auth";
+
 export default {
   name: "app",
   components: { Navigation, Footer },
@@ -20,12 +23,24 @@ export default {
     };
   },
   created() {
+    firebase.auth().onAuthStateChanged((user) => {
+      this.$store.commit("updateUser", user);
+      if (user) {
+        this.$store.dispatch("getCurrentUser", )
+      }
+    })
     this.checkRoute();
+    //console.log(firebase.auth().currentUser.uid);
+    
   },
   mounted() {},
   methods: {
     checkRoute() {
-      if (this.$route.name === "Login" | this.$route.name === "Register" | this.$route.name === "ForgotPassword") {
+      if (
+        this.$route.name === "Login" || 
+        this.$route.name === "Register" || 
+        this.$route.name === "ForgotPassword"
+      ) {
         this.navigation = false;
         return;
       }
